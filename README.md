@@ -8,7 +8,7 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://pre-commit.com/)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/license/mit)
 
-Author - [Jack Zeng](https://jackzeng-robotics.github.io/)
+Author - [Jack Zeng](https://jackzeng-robotics.github.io/) | [Paper](https://arxiv.org/abs/2508.01522)
 
 https://github.com/user-attachments/assets/1528b863-b8f0-4388-bf7c-b2ef38446e11
 
