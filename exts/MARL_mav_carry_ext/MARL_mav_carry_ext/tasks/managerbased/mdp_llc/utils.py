@@ -83,5 +83,4 @@ def import_ref_folder_from_csv(folder_path) -> torch.Tensor:
     for file in os.listdir(folder_path):
         if file.endswith(".csv"):
             references.append(import_ref_from_csv(os.path.join(folder_path, file)))
-    references = torch.tensor(references, device="cuda")
     return references

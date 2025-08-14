@@ -221,7 +221,7 @@ class RefTrajectoryCommand(CommandTerm):
         super().__init__(cfg, env)
 
         # parameters for the trajectory
-        self.reference_buffer = cfg.reference_trajectories
+        self.reference_buffer = torch.tensor(cfg.reference_trajectories, device=self.device)
         _, num_setpoints, num_dimensions = self.reference_buffer.shape
         self.reference = torch.zeros(self.num_envs, num_setpoints, num_dimensions, device=self.device)
         self.num_points = cfg.num_points
@@ -406,7 +406,7 @@ class RefTrajectoryCommandCfg(CommandTermCfg):
     If True, the quaternion is made unique by ensuring the real part is positive.
     """
 
-    reference_trajectories: torch.Tensor = MISSING
+    reference_trajectories: list = MISSING
     """Reference trajectory buffer to sample the trajectories from."""
     num_points: int = MISSING
     """Number of points in the reference trajectory."""
